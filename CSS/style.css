@@ -53,7 +53,7 @@ nav a{
     background-size: contain;
     margin-top: 5px;
 }
-.pai{
+.painav{
     display: flex;
     gap: 20px;
 }
@@ -66,14 +66,14 @@ nav a{
     justify-content: space-between;
     width: 100%;
     height: 715px;
-    padding: 0 0 0 5%;
+    padding: 0 0 0 5vw;
 }
 #h2ebuttons{
     display: flex;
     flex-direction: column;
     justify-content: center;
     flex: 1;
-    gap: 15vh;
+    gap: 7pc;
 }
 #h2{
     margin: 0 0 0 6vw;
@@ -129,14 +129,19 @@ nav a{
 }
 
 /*tudo acima sao os botoes do section 1*/
-
+.paimulheres{
+    height: 100%;
+    width: 750px;
+    display: flex;
+    align-items: end;
+}
 .mulheress1{
     background-image: url(../IMG/mulheres_s1.png);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: bottom right;
     width: 750px;
-    height: 100%;
+    height: 70%;
     flex-shrink: 0;
 }
 
@@ -162,7 +167,7 @@ nav a{
 #dona{
     background-image: url(../IMG/dona.png);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     width: 300px;
     height: 550px;
     border: 1px solid white;
