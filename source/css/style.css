@@ -1,3 +1,7 @@
+:root{
+    --acent-color:#ecac0a;
+}
+
 *{
     margin: 0px;
     padding: 0px;
@@ -8,12 +12,17 @@
 a{
     text-decoration: none;
 }
-body{
+html{
+    max-width: 100vw;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 header{
     width: 100vw;
+    height: 10vh;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 nav{
     width: 100%;
@@ -21,41 +30,29 @@ nav{
     justify-content: space-between;
     align-items: center;
     background-color: black;
+    height: 100%;
 }
 ul{
     margin: 5px 30px 0px 0px;
     list-style: none;
     display: flex;
     justify-content: space-between;
-    gap: 50px;
-    
+    gap: 5vw;
 }
 li{
     color: white;
-    font-size: 28px;
-}
+    font-size: clamp(18px,3vw,28px);
+} 
 nav a{
     color: white;
 }
-#content-logo{
-    background-image: url(../IMG/icone_logo_studio.png);
-    height: 60px;
-    width: 60px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin-top: 5px;
-}
-#content-nome-logo{
-    background-image: url(../IMG/nome_nav.png);
-    height: 50px;
-    width: 108px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin-top: 5px;
-}
-.container-logos{
+.container-logo{
     display: flex;
-    gap: 20px;
+}
+#logo-salao{
+    min-width: 5vw;
+    max-height: 8vh;
+    padding-left: 2vw;
 }
 
 /*tudo acima e da header*/
@@ -64,8 +61,8 @@ nav a{
     background-color: rgba(11, 12, 13, 1);
     display: flex;
     justify-content: space-between;
-    width: 100%;
-    height: 715px;
+    width: 100vw;
+    height: 100vh;
     padding: 0 0 0 5vw;
 }
 .container-titulos-e-botoes{
@@ -73,20 +70,28 @@ nav a{
     flex-direction: column;
     justify-content: center;
     flex: 1;
-    gap: 7pc;
+    gap: 10vh;
 }
 .content-titulos{
     margin: 0 0 0 6vw;
     color: white;
-    font-size: clamp(50px, 7vw, 95px);
+    font-size: clamp(40px, 7vw, 95px);
     display: flex;
     flex-direction: column;
     font-family: "Instrument Serif", serif;
     font-weight: 400;
     font-style: italic;
 }
-#h2dourado{
-    color: rgb(145, 136, 19);
+.content-titulos h2{
+    color: white;
+    transition: all 0.5s ease-in-out;
+    cursor: default;
+}
+
+.content-titulos h2:hover{
+    color: var(--acent-color);
+    text-shadow: 0px 0px 100px rgb(0, 0, 0);
+    transform: translateX(20px);
 }
 
 /*tudo acima e dos h2 da section 1*/
@@ -94,7 +99,7 @@ nav a{
     display: flex;
     flex-direction: column;
     gap: 20px;
-    margin: 0 0 0 9vw;
+    margin-left: 10vw;
 }
 .button{
     font-size: 25px;
@@ -104,8 +109,9 @@ nav a{
     background-color: black;
     padding: 5px 10px 5px 10px;
     border-radius: 10px;
-    border: 0px;
+    border: none;
 }
+
 .button a{
     text-decoration: none;
     color: rgb(255, 255, 255);
@@ -131,16 +137,16 @@ nav a{
 /*tudo acima sao os botoes do section 1*/
 .container-imagem-section1{
     height: 100%;
-    width: 750px;
+    /* width: 750px; */
     display: flex;
     align-items: end;
 }
 #content-mulheres-section1{
-    background-image: url(..//img/mulheres_s1.png);
+    /* background-image: url(..//img/mulheres_s1.png); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom right;
-    width: 750px;
+    /* width: 750px; */
     height: 70%;
     flex-shrink: 0;
 }
@@ -149,78 +155,84 @@ nav a{
 /*literal tudo, botoes, h2. sao da section 1*/
 
 #section-2{
-    background-color: rgb(0, 0, 0);
-    display: flex;
-    width: 100%;
-    height: 100vh;
-}
-.container-imagem-e-texto-e-botao{
-    width: 100vw;
-    max-height: 715px;
     display: flex;
     justify-content: center;
+    gap: 8vw;
     align-items: center;
-    gap: 10vw;
-    padding-bottom: 4%;
-}
-#content-imagem-section2{
-    background-image: url(..//img/dona.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-width: 300px;
-    min-height: 550px;
-    border: 1px solid white;
-    border-radius: 10px;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
 }
 
+#section-2 img{
+    max-width: 30vw;
+    max-height: 70vh;
+    margin-bottom: 5vh;
+    margin-left: 3vh;
+    transition:  0.5s ease-in-out;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+#section-2 img:hover{
+    transform: translateY(-10px);
+    border: solid 5px var(--acent-color);
+}
 /*Acima esta a imagem da section 2*/
 
-.container-titulos-e-paragrafos-section2{
+.sobre-lash-designer{
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    min-height: 515px;
-    
+    align-items: center;
+    gap: 20px;    
 }
-.container-titulos-e-paragrafos-section2 h2{
+.sobre-lash-designer h3{
     color: white;
-    font-size: clamp(20px,7w,35px);
+    font-size: clamp(20px,7vw,35px);
     font-family: "Edu NSW ACT Cursive", cursive;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
+    font-optical-sizing: auto; /* ? */
 }
-.container-titulos-e-paragrafos-section2 #titulo-maior{
-    font-size: clamp(30px,7vw,40px);
+.sobre-lash-designer #titulo-maior{
+    font-size: clamp(30px,7vw,55px);
     font-family: "Inria Serif", serif;
     font-weight: 600;
-    color: rgb(145, 136, 19);
+    color: var(--acent-color);
 }
 #section-2 p{
     max-width: 40vw;
-    text-align: justify;
-    hyphens: auto;
+    text-align: center;
+    hyphens: auto; /* ? */
     line-height: 25px;
-    font-size: clamp(15px,7vw,20px);
+    font-size: clamp(14px,3vw,20px);
     color: white;
 }
 
 /*Acima esta os paragrafos e titulos da section 2*/
 
-#section-2 button{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: white;
+#agendar-btn{ 
+    background-color: var(--acent-color);
     padding: 5px 10px 5px 10px;
     border-radius: 10px;
-    border: 0px;
-    width: 200px;
+    width: 200px; 
     height: 50px;
     font-size: 25px;
-    margin-top: 7%;
+    border: solid 2px var(--acent-color);
+    transition: ease-in-out 0.3s;
+    cursor: pointer;
+    text-align: center;
 }
-#section-2 a{
+
+#agendar-btn:hover{
+    background-color: black;
+    color: var(--acent-color);
+
+    & a{
+       color: white; 
+    }
+}
+
+#agendar-btn a{
     text-decoration: none;
     color: black;
     font-family: "Poppins", sans-serif;
