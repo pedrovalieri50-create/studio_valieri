@@ -1,6 +1,12 @@
 :root{
     --acent-color:#b3881a;
 }
+:root #como-chegar-btn{
+    --acent-color:#fefefe;
+}
+:root #agendar-btn{
+    --acent-color:#fefefe;
+}
 :root img{
     --acent-color:#ffffff;
 }
@@ -244,3 +250,87 @@ nav a{
 }
 
 /*Acima esta o botao agende da section 2*/
+/*acima esta a section 2*/
+#section-3{
+    display: flex;
+    justify-content: center;
+    gap: 8vw;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+}
+#section-3 img{
+    max-width: 30vw;
+    max-height: 70vh;
+    margin-bottom: 5vh;
+    margin-right: 3vh;
+    transition:  0.5s ease-in-out;
+    cursor: pointer;
+    border-radius: 20px;
+}
+#section-3 img:hover{
+    transform: translateY(-10px);
+    border: solid 5px var(--acent-color);
+}
+/*acima esta as imagens da section 3*/
+.sobre-o-espaco{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 20px;    
+}
+.sobre-o-espaco h3{
+    color: white;
+    font-size: clamp(15px,7vw,20px);
+    font-family: "Edu NSW ACT Cursive", cursive;
+    font-optical-sizing: auto; /* isso tava na fescrição da fonte no google fonts, ai eu so botei */
+    margin-left: 5%;
+}
+.sobre-o-espaco #titulo-maior-section3{
+    font-size: clamp(30px,7vw,45px);
+    font-family: "Inria Serif", serif;
+    font-weight: 600;
+    color: var(--acent-color);
+    margin-left: 5%;
+}
+#section-3 p{
+    max-width: 40vw;
+    hyphens: auto; /* hyphens é para quando quebrar o texto, botar o tracinho */
+    line-height: 25px;
+    font-size: clamp(14px,3vw,20px);
+    color: white;
+    margin-left: 5%;
+}
+/*acima esta os textos da section 3*/
+#como-chegar-btn{ 
+    background-color: var(--acent-color);
+    padding: 5px 10px 5px 10px;
+    border-radius: 10px;
+    width: 200px; 
+    height: 50px;
+    font-size: 25px;
+    border: solid 2px var(--acent-color);
+    transition: ease-in-out 0.3s;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+#como-chegar-btn:hover{
+    background-color: black;
+    color: var(--acent-color);
+
+    & a{
+       color: white; 
+    }
+}
+#como-chegar-btn a{
+    text-decoration: none;
+    color: black;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+/*acima esta os botoes da section 3*/
