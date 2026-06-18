@@ -1,5 +1,8 @@
 :root{
-    --acent-color:#ecac0a;
+    --acent-color:#b3881a;
+}
+:root img{
+    --acent-color:#ffffff;
 }
 
 *{
@@ -184,24 +187,23 @@ nav a{
 .sobre-lash-designer{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     gap: 20px;    
 }
 .sobre-lash-designer h3{
     color: white;
-    font-size: clamp(20px,7vw,35px);
+    font-size: clamp(15px,7vw,20px);
     font-family: "Edu NSW ACT Cursive", cursive;
     font-optical-sizing: auto; /* ? */
 }
 .sobre-lash-designer #titulo-maior{
-    font-size: clamp(30px,7vw,55px);
+    font-size: clamp(30px,7vw,45px);
     font-family: "Inria Serif", serif;
     font-weight: 600;
     color: var(--acent-color);
 }
 #section-2 p{
     max-width: 40vw;
-    text-align: center;
     hyphens: auto; /* ? */
     line-height: 25px;
     font-size: clamp(14px,3vw,20px);
@@ -221,6 +223,7 @@ nav a{
     transition: ease-in-out 0.3s;
     cursor: pointer;
     text-align: center;
+    margin-top: 5%;
 }
 
 #agendar-btn:hover{
