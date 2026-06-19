@@ -77,10 +77,10 @@ nav a:hover::after{
 /*tudo acima e da header*/
 
 #section-1{
-    background-image: linear-gradient(rgba(0,0,0,0.7)),url(../img/melhor-franquia-de-estetica-cilios.jpg) ;
+    background-image: linear-gradient(rgba(0,0,0,0.7)),url(../img/imagem-section1-segundaimagem.png) ;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: top left;
     display: flex;
     justify-content: space-between;
     width: 100vw;
@@ -284,7 +284,7 @@ nav a:hover::after{
     height: 100%;
 }
 #section-3 img{
-    max-width: 30vw;
+    max-width: 35vw;
     max-height: 70vh;
     margin-bottom: 5vh;
     margin-right: 3vh;
@@ -309,14 +309,14 @@ nav a:hover::after{
     font-size: clamp(15px,7vw,20px);
     font-family: "Edu NSW ACT Cursive", cursive;
     font-optical-sizing: auto; /* isso tava na fescrição da fonte no google fonts, ai eu so botei */
-    margin-left: 5%;
+    margin-left: 6%;
 }
 .sobre-o-espaco #titulo-maior-section3{
     font-size: clamp(30px,7vw,45px);
     font-family: "Inria Serif", serif;
     font-weight: 600;
     color: var(--acent-color);
-    margin-left: 5%;
+    margin-left: 6%;
 }
 #section-3 p{
     max-width: 40vw;
@@ -324,7 +324,7 @@ nav a:hover::after{
     line-height: 25px;
     font-size: clamp(14px,3vw,20px);
     color: white;
-    margin-left: 5%;
+    margin-left: 6%;
 }
 /*acima esta os textos da section 3*/
 #como-chegar-btn{ 
@@ -340,7 +340,7 @@ nav a:hover::after{
     cursor: pointer;
     text-align: center;
     margin-top: 5%;
-    margin-left: 5%;
+    margin-left: 6%;
 }
 #como-chegar-btn:hover{
     background-color: black;
