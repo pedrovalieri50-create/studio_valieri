@@ -21,6 +21,7 @@ html{
 header{
     width: 100vw;
     height: 10vh;
+    max-width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -76,12 +77,14 @@ nav a:hover::after{
 /*tudo acima e da header*/
 
 #section-1{
-    background-color: rgba(11, 12, 13, 1);
+    background-image: linear-gradient(rgba(0,0,0,0.7)),url(../img/melhor-franquia-de-estetica-cilios.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     display: flex;
     justify-content: space-between;
     width: 100vw;
     height: 100vh;
-    padding: 0 0 0 5vw;
 }
 .container-titulos-e-botoes{
     display: flex;
