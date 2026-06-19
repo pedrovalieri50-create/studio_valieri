@@ -80,7 +80,7 @@ nav a:hover::after{
     background-image: linear-gradient(rgba(0,0,0,0.7)),url(../img/imagem-section1-segundaimagem.png) ;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top left;
+    background-position: 50% 15%;
     display: flex;
     justify-content: space-between;
     width: 100vw;
