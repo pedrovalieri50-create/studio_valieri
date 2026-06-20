@@ -44,7 +44,9 @@
 
             // SEGUNDO PARÂMETRO (1200) É O TEMPO EM MILISSEGUNDOS (1.2 segundos)
             // Aumente para ir mais devagar, diminua para ir mais rápido!
-            smoothScrollTo(offsetPosition, 1800); 
+            smoothScrollTo(offsetPosition, 800); 
         }
         });
       });
+
+      
