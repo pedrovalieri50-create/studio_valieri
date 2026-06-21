@@ -358,3 +358,76 @@ nav a:hover::after{
     font-style: normal;
 }
 /*acima esta os botoes da section 3*/
+#section-4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    gap: 10vh;
+}
+#titulos-section-4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+
+}
+#titulos-section-4 h3{
+    font-size: clamp(15px,3vw,35px);
+    color: #fefefe;
+    font-family: "Edu NSW ACT Cursive", cursive;
+    font-optical-sizing: auto; /* isso tava na fescrição da fonte no google fonts, ai eu so botei */
+}
+#titulos-section-4 h1{
+    font-size: clamp(30px,7vw,65px);
+    font-family: "Inria Serif", serif;
+    font-weight: 600;
+    color: #fefefe;
+}
+
+
+/*acima esta os titulos da section-4*/
+
+#todos-os-cilios{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: auto;
+    gap: 5vw;
+}
+#todos-os-cilios div{
+    width: 18vw;
+    max-height: 55vh;
+    min-height: 26vw;
+    background-color: rgb(16, 16, 16);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+}
+#todos-os-cilios div img{
+    max-width: 15vw;
+    max-height: 40vh;
+    border-radius: 15px;
+    margin-top: 10%;
+    cursor: pointer;
+    --acent-color:#fefefe;
+    transition:  0.5s ease-in-out;
+}
+#section-4 img:hover{
+    transform: translateY(-10px);
+    border: solid 3px var(--acent-color);
+}
+#todos-os-cilios div h2{
+    margin-top: 8%;
+    color: #fefefe;
+    font-size: clamp(10px,2vw,25px);
+    font-family: "Inria Serif", serif;
+    font-weight: 600;
+}
+
