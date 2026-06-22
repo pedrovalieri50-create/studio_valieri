@@ -367,7 +367,7 @@ nav a:hover::after{
     font-weight: 500;
 }
 /*acima esta os botoes da section 3*/
-#section-4{
+#section-4 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -375,8 +375,10 @@ nav a:hover::after{
     background-color: black;
     width: 100%;
     min-height: 100vh;
-    height: 100%;
+    height: auto; 
     gap: 10vh;
+    padding-top: 8vh;       
+    padding-bottom: 8vh;    
 }
 #titulos-section-4{
     display: flex;
