@@ -423,7 +423,7 @@ nav a:hover::after{
 }
 #section-4 img:hover{
     transform: translateY(-10px);
-    border: solid 3px var(--acent-color);
+    border: solid 5px var(--acent-color);
 }
 #todos-os-cilios div h2{
     margin-top: 8%;
@@ -433,3 +433,78 @@ nav a:hover::after{
     font-weight: 600;
 }
 
+/*acima esta a parte de cilios da section 4*/
+
+#todas-as-sombrancelhas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: auto;
+    gap: 5vw;
+}
+#todas-as-sombrancelhas div{
+    width: 18vw;
+    max-height: 55vh;
+    min-height: 26vw;
+    background-color: rgb(255, 254, 254);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+}
+#todas-as-sombrancelhas div img{
+    max-width: 15vw;
+    max-height: 40vh;
+    border-radius: 15px;
+    margin-top: 10%;
+    cursor: pointer;
+    --acent-color:#000000;
+    transition:  0.5s ease-in-out;
+}
+#todas-as-sombrancelhas div h2{
+    margin-top: 8%;
+    color: #000000;
+    font-size: clamp(10px,2vw,25px);
+    font-family: "Inria Serif", serif;
+    font-weight: 600;
+}
+
+/*acima esta a parte de sobrancelhas da section 4*/
+
+#todas-as-microlabiais{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: auto;
+    gap: 5vw;
+}
+#todas-as-microlabiais div{
+    width: 18vw;
+    max-height: 55vh;
+    min-height: 26vw;
+    background-color: rgb(16, 16, 16);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+}
+#todas-as-microlabiais div img{
+    max-width: 15vw;
+    max-height: 40vh;
+    border-radius: 15px;
+    margin-top: 10%;
+    cursor: pointer;
+    --acent-color:#ffffff;
+    transition:  0.5s ease-in-out;
+}
+#todas-as-microlabiais div h2{
+    margin-top: 8%;
+    color: #ffffff;
+    font-size: clamp(10px,2vw,25px);
+    font-family: "Inria Serif", serif;
+    font-weight: 600;
+}
+
+/*acima esta tudo da section 4*/
