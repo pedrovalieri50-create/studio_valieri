@@ -394,15 +394,14 @@ nav a:hover::after{
 
 /*acima esta os titulos da section-4*/
 
-#todos-os-cilios{
+#todos-os-servicos{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: auto;
     gap: 5vw;
 }
-#todos-os-cilios div{
+#todos-os-servicos div{
     width: 18vw;
     max-height: 55vh;
     min-height: 26vw;
@@ -412,7 +411,7 @@ nav a:hover::after{
     align-items: center;
     border-radius: 15px;
 }
-#todos-os-cilios div img{
+#todos-os-servicos div img{
     max-width: 15vw;
     max-height: 40vh;
     border-radius: 15px;
@@ -421,90 +420,46 @@ nav a:hover::after{
     --acent-color:#fefefe;
     transition:  0.5s ease-in-out;
 }
+#todos-os-servicos div h2{
+    margin-top: 8%;
+    color: #fefefe;
+    font-size: clamp(12px,2vw,22px);
+    font-family: "Inria Serif", serif;
+    font-weight: 600;
+    text-align: center;
+}
 #section-4 img:hover{
     transform: translateY(-10px);
     border: solid 5px var(--acent-color);
 }
-#todos-os-cilios div h2{
-    margin-top: 8%;
-    color: #fefefe;
-    font-size: clamp(10px,2vw,25px);
-    font-family: "Inria Serif", serif;
-    font-weight: 600;
-}
-
-/*acima esta a parte de cilios da section 4*/
-
-#todas-as-sombrancelhas{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: auto;
-    gap: 5vw;
-}
-#todas-as-sombrancelhas div{
-    width: 18vw;
-    max-height: 55vh;
-    min-height: 26vw;
-    background-color: rgb(255, 254, 254);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 15px;
-}
-#todas-as-sombrancelhas div img{
-    max-width: 15vw;
-    max-height: 40vh;
-    border-radius: 15px;
-    margin-top: 10%;
+#confira-btn{ 
+    background-color: var(--acent-color);
+    padding: 5px 10px 5px 10px;
+    border-radius: 10px;
+    width: 400px; 
+    height: 50px;
+    font-size: 25px;
+    border: solid 2px var(--acent-color);
+    transition: ease-in-out 0.3s;
     cursor: pointer;
-    --acent-color:#000000;
-    transition:  0.5s ease-in-out;
+    text-align: center;
+
 }
-#todas-as-sombrancelhas div h2{
-    margin-top: 8%;
-    color: #000000;
-    font-size: clamp(10px,2vw,25px);
-    font-family: "Inria Serif", serif;
-    font-weight: 600;
+#confira-btn:hover{
+    background-color: black;
+    color: var(--acent-color);
+
+    & a{
+       color: white; 
+    }
+}
+#confira-btn a{
+    text-decoration: none;
+    color: black;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
 }
 
-/*acima esta a parte de sobrancelhas da section 4*/
 
-#todas-as-microlabiais{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: auto;
-    gap: 5vw;
-}
-#todas-as-microlabiais div{
-    width: 18vw;
-    max-height: 55vh;
-    min-height: 26vw;
-    background-color: rgb(16, 16, 16);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 15px;
-}
-#todas-as-microlabiais div img{
-    max-width: 15vw;
-    max-height: 40vh;
-    border-radius: 15px;
-    margin-top: 10%;
-    cursor: pointer;
-    --acent-color:#ffffff;
-    transition:  0.5s ease-in-out;
-}
-#todas-as-microlabiais div h2{
-    margin-top: 8%;
-    color: #ffffff;
-    font-size: clamp(10px,2vw,25px);
-    font-family: "Inria Serif", serif;
-    font-weight: 600;
-}
+/*acima esta a parte de servicos da section 4*/
 
-/*acima esta tudo da section 4*/
