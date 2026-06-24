@@ -243,7 +243,7 @@ nav a:hover::after{
     font-family: "Edu NSW ACT Cursive", cursive;
     font-optical-sizing: auto; 
 }
-.sobre-lash-designer #titulo-maior{
+.sobre-lash-designer #titulo-maior-section2{
     font-size: clamp(20px,7vw,45px);
     font-family: "Inria Serif", serif;
     font-weight: 600;
@@ -534,54 +534,112 @@ nav a:hover::after{
         font-size: 55px;
     }
     #section-2 {
+        display: flex;
         flex-direction: column; 
-        gap: 40px; 
+        gap: 20px;
         justify-content: center;
+        align-items: center;
+        text-align: left;
     }
 
+    /* O TRUQUE: Faz a div "desaparecer" no mobile para o flexbox ordenar os filhos direto */
+    .sobre-lash-designer {
+        display: contents; 
+    }
+
+    /* 1º Lugar: O h3 */
+    .sobre-lash-designer h3 {
+        order: 1;
+        margin-left: 0;
+    }
+
+    /* 2º Lugar: A imagem */
+    #content-imagem-section2 {
+        order: 2;
+    }
     #section-2 img {
-        max-width: 70vw;
+        max-width: 70vw; 
         max-height: 50vh;
         border-radius: 8px;
     }
 
-    .sobre-lash-designer {
-        align-items: center; 
-        text-align: center;  
+    /* 3º Lugar: O h2 (Título maior) */
+    .sobre-lash-designer #titulo-maior-section2 {
+        order: 3;
+        margin-left: 0;
+        margin-top: 10px;
+        text-align: center;
     }
 
+    /* 4º Lugar: Os parágrafos */
     #section-2 p {
+        order: 4;
         max-width: 90vw; 
+        margin-left: 0;
+    }
+
+    /* 5º Lugar: O botão */
+    #agendar-btn {
+        order: 5;
+        margin-left: 0; 
+        margin-top: 10px;
     }
     
-    #agendar-btn {
-        margin-top: 10px; 
-    }
+
     #section-3 {
+        display: flex;
         flex-direction: column; 
-        gap: 40px;
+        gap: 20px;
         justify-content: center;
+        align-items: center;
+        text-align: left;
     }
 
+    /* O TRUQUE: Faz a div "desaparecer" no mobile para o flexbox ordenar os filhos direto */
+    .sobre-o-espaco {
+        display: contents; 
+    }
+
+    /* 1º Lugar: O h3 */
+    .sobre-o-espaco h3 {
+        order: 1;
+        margin-left: 0;
+    }
+
+    /* 2º Lugar: A imagem */
+    #content-imagem-section3 {
+        order: 2;
+    }
     #section-3 img {
         max-width: 70vw; 
         max-height: 50vh;
         border-radius: 8px;
     }
 
-    .sobre-o-espaco {
-        align-items: center; 
-        text-align: center;  /
+    /* 3º Lugar: O h2 (Título maior) */
+    .sobre-o-espaco #titulo-maior-section3 {
+        order: 3;
+        margin-left: 0;
+        margin-top: 10px;
+        text-align: center;
     }
 
+    /* 4º Lugar: Os parágrafos */
     #section-3 p {
+        order: 4;
         max-width: 90vw; 
+        margin-left: 0;
     }
 
+    /* 5º Lugar: O botão */
     #como-chegar-btn {
+        order: 5;
         margin-left: 0; 
         margin-top: 10px;
     }
+
+    /* ... resto do seu media query ... */
+
     nav {
         padding: 0 10px;
         width: 100%;
