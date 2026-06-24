@@ -530,6 +530,9 @@ nav a:hover::after{
         background-size: cover;
         background-position: center bottom;
     }
+    #section-1 .content-titulos{
+        font-size: 55px;
+    }
     #section-2 {
         flex-direction: column; 
         gap: 40px; 
@@ -583,41 +586,38 @@ nav a:hover::after{
         padding: 0 10px;
         width: 100%;
         box-sizing: border-box;
+        justify-content: space-between;
     }
 
-    /* 2. O GRANDE VILÃO: Ajustamos o UL para não estourar */
+    
     ul {
         margin: 0;
-        gap: 10px; /* Troque 3vw por um valor fixo pequeno */
-        flex-wrap: wrap; /* Se não couber, os links quebram linha em vez de empurrar a tela */
+        gap: 20px; 
+        flex-wrap: wrap; 
         justify-content: flex-end;
         padding-right: 5px;
     }
 
-    /* 3. Deixamos as fontes ligeiramente menores e com menos espaçamento lateral */
+    
     li {
-        font-size: 14px; /* Tamanho fixo seguro para celular */
+        font-size: 14px; 
     }
     
     nav a {
         padding: 2px 4px;
     }
+    nav img {
+        width: 60px;
+        height: 50px;
+    }
 
-    /* 4. O botão do WhatsApp fixado de forma absoluta na tela visível */
+    
     #wpp-flutuante {
         position: fixed;
         width: 60px;
         height: 60px;
-        right: 15px !important; /* O !important garante que nenhuma outra regra interfire */
+        right: 15px !important; 
         bottom: 15px;
         z-index: 99999;
-    }
-    
-    /* Garante que o botão flutuante do WhatsApp grude no canto correto */
-    #wpp-flutuante {
-        width: 60px;
-        height: 60px;
-        right: 15px; /* Define distância fixa da margem direita real */
-        bottom: 15px;
     }
 }
