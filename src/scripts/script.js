@@ -49,30 +49,24 @@
         });
       });
 
-      const paragraphs = document.querySelectorAll('.texto');
 
-// Configurações do observador
+const paragraphs = document.querySelectorAll('.texto');
+
 const options = {
-  root: null, // usa a tela do navegador como referência
-  threshold: 0.1, // dispara quando 10% do elemento estiver visível
-  rootMargin: "0px 0px -50px 0px" // dispara um pouco antes do elemento aparecer totalmente
+  root: null,
+  // Usamos 0.05 (5%) para que no celular, assim que a pontinha do parágrafo entrar, ele já apareça.
+  threshold: 0.05, 
+  rootMargin: "0px" 
 };
 
 const observer = new IntersectionObserver(function(entries, observer) {
   entries.forEach(entry => {
-    // Se o elemento estiver visível na tela
     if (entry.isIntersecting) {
       entry.target.classList.add('appear');
-      // Opcional: para a animação acontecer só uma vez, descomente a linha abaixo
-      // observer.unobserve(entry.target);
-    } else {
-      // Opcional: se quiser que a animação aconteça toda vez que subir/descer a página
-      entry.target.classList.remove('appear');
     }
   });
 }, options);
 
-// Diz ao observador para monitorar cada um dos parágrafos
 paragraphs.forEach(paragraph => {
   observer.observe(paragraph);
 });
