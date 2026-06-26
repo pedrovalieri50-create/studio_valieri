@@ -181,6 +181,7 @@ nav a:hover::after{
     object-fit: contain;
     transition: transform 0.2s ease;
 }
+
 .button-section1 img:hover {
     transform: scale(1.1);
 }
@@ -273,7 +274,8 @@ nav a:hover::after{
     align-self: center;
     padding: 5px 10px 5px 10px;
     border-radius: 10px;
-    max-width: 400px; 
+    width: 100%;
+    max-width: 430px; 
     max-height: 50px;
     font-size: clamp(12px, 3vw, 25px);
     border: solid 2px var(--acent-color);
@@ -281,6 +283,11 @@ nav a:hover::after{
     cursor: pointer;
     text-align: center;
     margin-top: 5%;
+    display: flex;
+    flex-flow: row nowrap ;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
 #agendar-btn:hover{
@@ -368,7 +375,8 @@ nav a:hover::after{
     align-self: center;
     padding: 5px 10px 5px 10px;
     border-radius: 10px;
-    max-width: 200px; 
+    width: 100%;
+    max-width: 250px; 
     max-height: 50px;
     font-size: clamp(12px, 3vw, 25px);
     border: solid 2px var(--acent-color);
@@ -377,6 +385,11 @@ nav a:hover::after{
     text-align: center;
     margin-top: 5%;
     margin-left: 6%;
+    display: flex;
+    flex-flow: row nowrap ;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 #como-chegar-btn:hover{
     background-color: black;
@@ -480,14 +493,22 @@ nav a:hover::after{
     background-color: var(--acent-color);
     padding: 5px 10px 5px 10px;
     border-radius: 10px;
-    max-width: 400px; 
+    width: 100%;
+    max-width: 430px; 
     max-height: 50px;
     font-size: clamp(15px, 3vw, 25px);
     border: solid 2px var(--acent-color);
     transition: ease-in-out 0.3s;
     cursor: pointer;
     text-align: center;
-
+    display: flex;
+    flex-flow: row nowrap ;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+span{
+    font-size: 10px;
 }
 #confira-btn:hover{
     background-color: black;
@@ -581,9 +602,9 @@ footer #logo-footer {
     object-fit: contain;
     transition: transform 0.2s ease;
 }
-#botoes-footer #insta-logo-footer {
-    max-width: 46px;
-    max-height: 45px;
+#botoes-footer #logo-wpp-footer {
+    max-width: 44px;
+    max-height: 44px;
     object-fit: contain;
     transition: transform 0.2s ease;
 }
