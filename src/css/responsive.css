@@ -1,4 +1,85 @@
 @media (max-width: 768px) {
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 0 20px; 
+        box-sizing: border-box;
+    }
+
+    /* Exibe o botão hambúrguer no mobile */
+    .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 21px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        z-index: 10000; 
+    }
+
+    .menu-toggle .bar {
+        width: 100%;
+        height: 3px;
+        background-color: white;
+        border-radius: 2px;
+        transition: all 0.3s ease;
+    }
+
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; 
+        justify-content: flex-start;
+        gap: 25px;
+        position: fixed;
+        top: 10vh; 
+        right: -60%; 
+        width: 30%;
+        height: 30vh; 
+        background-color: rgba(14, 14, 14, 0.98); 
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.5); 
+        margin: 0; 
+        padding: 20px 0px 0px 20px; 
+        box-sizing: border-box;
+        transition: all 0.4s ease-in-out;
+        z-index: 9999;
+    }
+
+    
+   
+    .nav-menu li {
+        font-size: 18px; 
+    }
+
+   
+    .nav-menu.active {
+        right: 0;
+    }
+
+    .menu-toggle.active .bar:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+        background-color: var(--acent-color);
+    }
+    
+    .menu-toggle.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .menu-toggle.active .bar:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
+        background-color: var(--acent-color);
+    }
+
+    
+    nav a::after {
+        display: none !important;
+    }
+
     #section-2, #section-3, #section-4 {
         background-color: transparent; 
         padding: 20px 10px;

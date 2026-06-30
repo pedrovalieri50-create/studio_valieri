@@ -75,3 +75,27 @@ const observer = new IntersectionObserver(function(entries, observer) {
 elementsToAnimate.forEach(element => {
   observer.observe(element);
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navMenu = document.querySelector(".nav-menu"); // Certifique-se de que o <ul> tem essa classe
+    const navLinks = document.querySelectorAll(".nav-menu li a");
+
+    // Verifica se os elementos existem antes de adicionar eventos
+    if (menuToggle && navMenu) {
+        // Abre e fecha o menu ao clicar no hambúrguer
+        menuToggle.addEventListener("click", (e) => {
+            e.preventDefault(); // Previne comportamento padrão de botões
+            menuToggle.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        });
+
+        // Fecha o menu ao clicar em qualquer link
+        navLinks.forEach(link => {
+            link.addEventListener("click", () => {
+                menuToggle.classList.remove("active");
+                navMenu.classList.remove("active");
+            });
+        });
+    }
+});
