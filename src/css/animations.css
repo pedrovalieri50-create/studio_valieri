@@ -108,3 +108,23 @@ footer a {
 footer a:hover {
     color: #b3881a;
 }
+/*-- cards de depoimentos --*/
+
+.cards-depoimentos {
+  opacity: 0;
+  transform: translateX(-50px); 
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  will-change: opacity, transform; 
+}
+.cards-depoimentos.appear {
+  opacity: 1;
+  transform: translateX(0); 
+}
+
+.cards-depoimentos:nth-child(1) { transition-delay: 0s; }
+
+
+.cards-depoimentos:nth-child(2) { transition-delay: 0.2s; }
+
+
+.cards-depoimentos:nth-child(3) { transition-delay: 0.4s; }

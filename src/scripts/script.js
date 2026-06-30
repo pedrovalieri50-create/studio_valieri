@@ -50,11 +50,12 @@
       });
 
 
-const paragraphs = document.querySelectorAll('.texto');
+
+const elementsToAnimate = document.querySelectorAll('.texto, .cards-depoimentos');
 
 const options = {
   root: null,
-  // Usamos 0.05 (5%) para que no celular, assim que a pontinha do parágrafo entrar, ele já apareça.
+ 
   threshold: 0.05, 
   rootMargin: "0px" 
 };
@@ -63,10 +64,14 @@ const observer = new IntersectionObserver(function(entries, observer) {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       entry.target.classList.add('appear');
+      
+      
+      observer.unobserve(entry.target);
     }
   });
 }, options);
 
-paragraphs.forEach(paragraph => {
-  observer.observe(paragraph);
+
+elementsToAnimate.forEach(element => {
+  observer.observe(element);
 });
